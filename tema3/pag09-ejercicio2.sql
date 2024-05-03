@@ -1,0 +1,12 @@
+-- borro la tabla porque sino da fallo
+drop table cliente cascade constraints;
+CREATE TABLE CLIENTE(
+  NUM NUMBER,
+  DNI VARCHAR2(15),
+  NOMBRE VARCHAR2(50),
+  FECHAALTA DATE DEFAULT SYSDATE,
+  CONSTRAINT PK_CLIENTE
+  PRIMARY KEY(NUM),
+  CONSTRAINT UQ_CLIDNIUNICO
+  UNIQUE(DNI)
+);

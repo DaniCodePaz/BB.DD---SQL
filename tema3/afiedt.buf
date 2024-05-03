@@ -1,0 +1,6 @@
+create table cliente (
+num number(4),
+dni varchar(9),
+nombre varchar(26)
+)
+/
